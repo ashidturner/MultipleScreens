@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    tools:context="com.example.coffees.multiplescreens.SecondActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a course"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textColor="#000"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android: 19989"
+        android:id="@+id/checkBox1"
+        android:textColor="#000"
+        android:buttonTint="#0343ba"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java: 9989"
+        android:id="@+id/checkBox2"
+        android:textColor="#000"
+        android:buttonTint="#0343ba"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=".Net: 19989"
+        android:id="@+id/checkBox3"
+        android:textColor="#000"
+        android:buttonTint="#0343ba"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed to pay"
+        android:onClick="clicked"
+        android:textSize="15sp"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction Details"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/textViewtrans"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:visibility="gone"
+        android:id="@+id/textViewname"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age: "
+        android:visibility="gone"
+        android:id="@+id/textViewage"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Education: "
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/textViewedu"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course: "
+        android:visibility="gone"
+        android:id="@+id/textViewcourse"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Fee: "
+        android:visibility="gone"
+        android:id="@+id/textViewfee"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewbank"
+        android:visibility="gone"
+        android:text="Bank Name: "
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: "
+        android:visibility="gone"
+        android:id="@+id/textViewstats"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reason: "
+        android:id="@+id/textViewreason"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000"/>
+
+
+</LinearLayout>
