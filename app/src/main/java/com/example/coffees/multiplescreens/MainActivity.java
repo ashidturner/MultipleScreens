@@ -25,7 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void clicked(View view) {
         String name = etname.getText().toString().trim();
-        int age = Integer.parseInt(etage.getText().toString().trim());
+        String ages = etage.getText().toString().trim();
+        int age = 0;
+        if(ages.length()!=0){
+            age = Integer.parseInt(ages);
+        }
         Intent in = new Intent(MainActivity.this, SecondActivity.class);
         Student s = new Student(name,age);
         in.putExtra("obj1",s);        //Serialization

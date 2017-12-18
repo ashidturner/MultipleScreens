@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="match_parent">
+<LinearLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,6 +18,7 @@
         android:text="Course: "
         android:textColor="#000"
         android:textSize="15sp"
+        android:textStyle="bold"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"
         android:id="@+id/textViewcourse"/>
@@ -22,6 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Total Fee: "
+        android:textStyle="bold"
         android:id="@+id/textViewfee"
         android:textColor="#000"
         android:textSize="15sp"
@@ -33,6 +39,7 @@
         android:layout_height="wrap_content"
         android:hint="Enter Bank Account No"
         android:inputType="numberDecimal"
+        style="@style/NewLook"
         android:id="@+id/editTextacc"
         android:textColor="#000"
         android:textColorHint="#000"
@@ -44,6 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Bank Name"
+        style="@style/NewLook"
         android:id="@+id/editTextbank"
         android:textColor="#000"
         android:textColorHint="#000"
@@ -57,6 +65,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/editTextcvv"
         android:hint="Enter CVV"
+        style="@style/NewLook"
         android:inputType="numberDecimal"
         android:textColor="#000"
         android:textColorHint="#000"
@@ -67,11 +76,12 @@
       <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pay"
+        android:text="PAY"
           android:layout_marginTop="15dp"
         android:onClick="clicked"
         android:textSize="15sp"
-        android:background="@color/colorPrimary"/>
+          style="@style/NewLook"
+        android:background="@color/category_phrases"/>
 
      <EditText
         android:layout_width="match_parent"
@@ -80,6 +90,7 @@
         android:id="@+id/editTextcan"
         android:textColorHint="#000"
          android:textColor="#000"
+         style="@style/NewLook"
         android:backgroundTint="#000"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"/>
@@ -87,9 +98,11 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="cancel"
+        android:text="CANCEL"
+        style="@style/NewLook"
         android:layout_marginTop="15dp"
         android:textSize="15sp"
-        android:background="@color/colorPrimary"
+        android:background="@color/category_phrases"
         android:onClick="clicked2"/>
 </LinearLayout>
+</ScrollView>

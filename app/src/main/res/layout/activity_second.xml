@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="match_parent">
+<LinearLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,10 +12,12 @@
     android:background="#FFF"
     tools:context="com.example.coffees.multiplescreens.SecondActivity">
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Select a course"
+        android:textStyle="bold"
         android:layout_gravity="center"
         android:textSize="30sp"
         android:textColor="#000"/>
@@ -21,37 +27,42 @@
         android:layout_height="wrap_content"
         android:text="Android: 19989"
         android:id="@+id/checkBox1"
+        style="@style/NewLook"
         android:textColor="#000"
-        android:buttonTint="#0343ba"/>
+        android:buttonTint="@color/category_numbers"/>
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Java: 9989"
         android:id="@+id/checkBox2"
+        style="@style/NewLook"
         android:textColor="#000"
-        android:buttonTint="#0343ba"/>
+        android:buttonTint="@color/category_numbers"/>
+
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/NewLook"
         android:text=".Net: 19989"
         android:id="@+id/checkBox3"
         android:textColor="#000"
-        android:buttonTint="#0343ba"/>
+        android:buttonTint="@color/category_numbers"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Proceed to pay"
+
+        android:text="PROCEED TO PAY"
         android:onClick="clicked"
-        android:textSize="15sp"
-        android:background="@color/colorPrimary"/>
+        style="@style/NewLook"
+        android:background="@color/category_phrases"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Transaction Details"
         android:textSize="30sp"
+        style="@style/NewLook"
         android:layout_gravity="center"
         android:visibility="gone"
         android:id="@+id/textViewtrans"
@@ -62,6 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Name: "
+        style="@style/NewLook"
         android:visibility="gone"
         android:id="@+id/textViewname"
         android:layout_marginTop="10dp"
@@ -71,6 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Age: "
+        style="@style/NewLook"
         android:visibility="gone"
         android:id="@+id/textViewage"
         android:layout_marginTop="10dp"
@@ -81,6 +94,7 @@
         android:layout_height="wrap_content"
         android:text="Education: "
         android:visibility="gone"
+        style="@style/NewLook"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
         android:id="@+id/textViewedu"
@@ -91,6 +105,7 @@
         android:layout_height="wrap_content"
         android:text="Course: "
         android:visibility="gone"
+        style="@style/NewLook"
         android:id="@+id/textViewcourse"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
@@ -101,6 +116,7 @@
         android:text="Total Fee: "
         android:visibility="gone"
         android:id="@+id/textViewfee"
+        style="@style/NewLook"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
         android:textColor="#000"/>
@@ -111,6 +127,7 @@
         android:id="@+id/textViewbank"
         android:visibility="gone"
         android:text="Bank Name: "
+        style="@style/NewLook"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
         android:textColor="#000"/>
@@ -120,6 +137,7 @@
         android:layout_height="wrap_content"
         android:text="Status: "
         android:visibility="gone"
+        style="@style/NewLook"
         android:id="@+id/textViewstats"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
@@ -129,6 +147,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reason: "
+        style="@style/NewLook"
         android:id="@+id/textViewreason"
         android:visibility="gone"
         android:layout_marginTop="10dp"
@@ -137,3 +156,4 @@
 
 
 </LinearLayout>
+</ScrollView>

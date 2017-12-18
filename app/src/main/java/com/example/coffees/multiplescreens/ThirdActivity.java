@@ -71,7 +71,7 @@ public class ThirdActivity extends AppCompatActivity {
 
      public void courseset(Bundle b)     //FUNCTION to deserialize course object and set tvcourse
     {
-        Course course= (Course) b.getSerializable("courseobj");
+        Course course = (Course) b.getSerializable("courseobj");
         String cname = course.getCourse().trim();
         StringBuilder cname1 = new StringBuilder(cname);
         for(int i=0;i<cname1.length();i++){
@@ -128,8 +128,9 @@ public class ThirdActivity extends AppCompatActivity {
             finish();
         }
         else{
-            Toast.makeText(this, "Please specify reason", Toast.LENGTH_SHORT).show();
+           etreason.setError("This field is required");
         }
 
     }
+
 }
